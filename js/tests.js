@@ -97,3 +97,42 @@ for (let i = 0; i < myArray.length; i++) {
 //Make a forEach loop and, at each turn, display the value in the console.
 
 const mySecondArray = ["one", "two", "three"];
+
+mySecondArray.forEach(element => console.log(element))
+
+function hello() {
+    return 1
+}
+
+hello() + 2
+
+var a = ['i', 'r', 'q', 'k', 'x', 'j']
+a.indexOf('q') //2
+
+var a = 1
+a === 6
+a + 1 // 2!!!!
+
+var a = 3
+a === 18
+a + 2 // 5
+
+var a = 0
+a = 5
+a + 1 // 6!!!
+
+var a = 2
+if (2 < 4) {
+    a = 1
+}
+a + 3 // 4
+
+function hi(a, b) {
+    return a * b
+}
+
+function hello(a, b) {
+    return hi(a, b + 2) // (3, 2+2)
+}
+
+hello(3, 2) // 12
