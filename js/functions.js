@@ -46,4 +46,51 @@ function fizzBuzz(number) {
         default: return a;
     }
 }
-console.log(fizzBuzz(3, 15));
+console.log(fizzBuzz(0, 100));
+
+for (let i = 0; i < 100; i++){
+ 
+      if (i % 3 ==0 && i % 5 == 0 ){
+        console.log('fizzbuzz')
+      } else if (i % 5 ==0) {
+        console.log('buzz')
+      } else if (i % 3 == 0){
+        console.log('fizz')
+      } else {
+        console.log(i)
+      }
+    }
+
+for (let i = 0; i <= 15; i++) {
+    if (i===0){
+        console.log(i + " is even");
+    }else if (i % 2 === 0){
+        console.log(i + " is even")
+    }else {
+        console.log(i + " is odd")
+    }
+}
+
+for (let i = 1; i < 10 ; i ++) {
+    console.log(i * i)
+}
+
+for (let i = 10; i > 0; i --) {
+    console.log(i)
+}
+
+for (let i = 0; i < 10; i ++) {
+    console.log(i * 5)
+}
+
+for (let i = 1; i <= 10; i ++) {
+    console.log(i)
+}
+for (let i = 0; i < 10; i ++) {
+    console.log(i + 1)
+}
+
+for (let i = 0; i < 6; i ++) {
+    console.log(i * 2)
+}
+

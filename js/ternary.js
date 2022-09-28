@@ -17,7 +17,7 @@ const number = 5
 const result = number >= 5 ? console.log("Done!") : console.log("Error!") // Done
 // 2. write a ternary operator that assigns a value to a variable based on a condition and uses another ternary operator as one of the values
 
-const carSpeed = 130
+const carSpeed = 150
 const speedLimit = carSpeed > 120 ? console.log('Way Too Fast!!') :
     carSpeed >= 80 ? console.log('You may go!') :
         carSpeed >= 60 ? console.log('Hit the gas!') : console.log('Turtle!')

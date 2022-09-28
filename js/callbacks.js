@@ -73,9 +73,26 @@ function goodMorning(name) {
 
 let timer = setInterval(goodMorning, 3000, "World");
 
+function paypalPaymentProcessHandler(id, price, recipientID, resultHandler) {
+    if (user.find(id).money > price) {
+        resultHandler('OK')
+    } else {
+        resultHandler('payment, please try again') 
+        { reason: 'card blocked' }
+    }
+
+}
+function showUserPaymentResult(result, reason) {
+    if (result === 'OK') {
+
+    } else {
+        console.log(reason)
+    }
+}
+
 // 4. write a function that takes a callback as an argument and calls the callback with an argument that is the result of another function
 
-function learnJS(lang, passedLesson) {
+function learnJS(lang) {
     console.log(`I learn ${lang}`);
 }
 function passedLesson(lesson) {
