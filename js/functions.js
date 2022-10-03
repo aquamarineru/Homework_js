@@ -94,3 +94,70 @@ for (let i = 0; i < 6; i ++) {
     console.log(i * 2)
 }
 
+
+
+
+let total = 0;
+
+for( let i = 0; i < 10; i++ ) {
+    total = total + i
+  }
+  
+  console.log(total)
+
+  let runTime = 35;
+let runDistance = 3.5;
+ 
+if (runTime <= 30 && runDistance > 3.5) {
+  console.log("You're super fast!");
+} else if (runTime >= 30 && runDistance <= 3) {
+  console.log("You're not making your pace!");
+} else if (runTime > 30 || runDistance > 3) {
+  console.log("Nice workout!"); 
+} else {
+  console.log("Keep on running!");
+}
+
+let groceryItem = "apple";
+ 
+switch (groceryItem) {
+  case "tomato":
+    console.log("Tomatoes are $0.49");
+    break;
+  case "lime":
+    console.log("Limes are $1.49");
+    break;
+  case "papaya":
+    console.log("Papayas are $1.29");
+    break;
+  default:
+    console.log("Invalid item");
+    break;
+}
+
+let weather = "spring";
+let clothingChoice = "";
+ 
+if (weather === "spring") {
+  clothingChoice = "Put on rain boots.";
+} else if (weather === "summer") {
+  clothingChoice = "Make sure to take your sunscreen.";
+} else if (weather === "fall") {
+  clothingChoice = "Wear a light jacket.";
+} else if (weather === 'winter') {
+  clothingChoice = "Wear a heavy coat.";
+} else {
+  console.log('Invalid weather type.');
+};
+console.log(clothingChoice);
+
+
+let randomNumber = Math.floor(Math.rangom() * 8);
+console.log(randomNumber)
+
+let input = 8;
+const controlVal = input / 2 + 3;
+const multiplier = (number, phase) => {
+  const val = number * controlVal + phase;
+  console.log(val);
+};
